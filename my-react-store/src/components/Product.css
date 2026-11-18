@@ -4,3 +4,7 @@ img{
     margin-top: 15px;
     border-radius: 75px;
 }
+
+.product-total {
+    margin-inline-start: 0.75rem;
+}

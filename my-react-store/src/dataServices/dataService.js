@@ -4,7 +4,7 @@ const catalog = [
     {
         "title":"Chocolate",
         "category":"Candy",
-        "price":"$5.99",
+        "price":"5.99",
         "image":"chocolate-candy.png",
         "_id":"1"
 
@@ -12,7 +12,7 @@ const catalog = [
     {
         "title":"Strawberry",
         "category":"Cake",
-        "price":"$19.99",
+        "price":"19.99",
         "image":"strawberry-cake.png",
         "_id":"2"
 
@@ -20,7 +20,7 @@ const catalog = [
     {
         "title":"Sugar",
         "category":"Cookies",
-        "price":"$2.99",
+        "price":"2.99",
         "image":"sugar-cookies.png",
         "_id":"3"
 
