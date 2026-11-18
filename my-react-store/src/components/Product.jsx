@@ -33,7 +33,7 @@ function Product(props){
             <label>${props.data.price}</label>
             <label className="product-total">Total: ${calculateTotal()}</label>
             <QuantityPicker onChange={handleQtyChange}/>
-            <button class="btn-outline theme-success" onClick={handleAdd}>Add</button>
+            <button class="btn-outline theme-success btn-xs" onClick={handleAdd}>Add</button>
             
         </div>
     );
