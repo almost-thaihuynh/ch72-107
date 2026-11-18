@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import QuantityPicker from './components/QuantityPicker';
 import Catalog from './pages/Catalog';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 // Middle Logic
 function App() {
@@ -17,7 +18,6 @@ function App() {
         {/* this is just and example */}
       <Catalog/>
 
-      <QuantityPicker/>
       </main>
       <Footer />
     </div>

@@ -25,9 +25,9 @@ function QuantityPicker(){
 
     return(
         <div className="quantity-picker">
-            <button className="btn-minus" onClick={handleDecrease}>-</button>
+            <button className="btn-minus btn-outline theme-inverse" onClick={handleDecrease}>-</button>
             <label className="label-qty">{quantity}</label>
-            <button className="btn-plus" onClick={handleIncrease}>+</button>
+            <button className="btn-plus btn-outline theme-secondary" onClick={handleIncrease}>+</button>
 
         </div>
     )
