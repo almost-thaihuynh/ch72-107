@@ -23,9 +23,13 @@ function Catalog(){
     }
 
     return(
-        <div className="catalog">
-            <p>Cart: {cart.length}</p>
-            {products.map(prod => <Product key={prod._id} data={prod} onAdd={handleAddToCart}/>)}
+        <div>
+            <h1>Catalog</h1>
+            <p className="text-secondary">Cart: {cart.lenth}</p>
+                <div className="catalog">
+                    <p>Cart: {cart.length}</p>
+                        {products.map(prod => <Product key={prod._id} data={prod} onAdd={handleAddToCart}/>)}
+                </div>
 
         </div>
     )

@@ -1,10 +1,17 @@
 img{
-    height: 200px;
+    height: 180px;
+    object-fit: contain;
     width: 299px;
+    padding: 1rem;
     margin-top: 15px;
     border-radius: 75px;
 }
 
 .product-total {
     margin-inline-start: 0.75rem;
+}
+
+.product {
+    width: 16rem;
+
 }

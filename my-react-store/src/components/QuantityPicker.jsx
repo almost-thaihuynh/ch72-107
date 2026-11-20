@@ -28,9 +28,9 @@ function QuantityPicker(props){
 
     return(
         <div className="quantity-picker">
-            <button className="btn-minus btn-outline theme-inverse btn-xs" onClick={handleDecrease}>-</button>
+            <button className="btn-minus" onClick={handleDecrease} disabled={quantity===1}>-</button>
             <label className="label-qty">{quantity}</label>
-            <button className="btn-plus btn-outline theme-secondary btn-xs" onClick={handleIncrease}>+</button>
+            <button className="btn-plus" onClick={handleIncrease}>+</button>
 
         </div>
     )

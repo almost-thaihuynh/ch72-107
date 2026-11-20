@@ -1,26 +1,39 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 // Top Import
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import QuantityPicker from './components/QuantityPicker';
 import Catalog from './pages/Catalog';
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+
 import "bootstrap/dist/css/bootstrap.min.css"
 
 // Middle Logic
 function App() {
+
   return (
-    <div className="App">
+    <BrowserRouter>
+    <div className='app'>
       <Navbar />
 
-      <main className="main-content">
-        <h1>Welcome to My Online Store</h1>
-        <p>Discover amazing products at incredible prices.</p>
-        {/* this is just and example */}
-      <Catalog/>
-
+      <main className='container py-4'>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/catalog" element={<Catalog/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
       </main>
-      <Footer />
+      <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 
